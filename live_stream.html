@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EdgeGuard - Live</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkAuth(); loadLive()">
+
+<div class="sidebar">
+  <h2>EdgeGuard</h2>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="live.html">Live Camera</a>
+  <a href="alerts.html">Alerts</a>
+  <a href="profile.html">Profile</a>
+  <a href="settings.html">Settings</a>
+  <a href="#" onclick="logout()">Logout</a>
+</div>
+
+<div class="main">
+  <h2>Live Camera</h2>
+  <img id="video" width="720">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
