@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EdgeGuard - Alerts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkAuth(); loadAlerts()">
+
+<div class="sidebar">
+  <h2>EdgeGuard</h2>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="live.html">Live Camera</a>
+  <a href="alerts.html">Alerts</a>
+  <a href="profile.html">Profile</a>
+  <a href="settings.html">Settings</a>
+  <a href="#" onclick="logout()">Logout</a>
+</div>
+
+<div class="main">
+  <h2> Alerts</h2>
+  <table border="1" width="100%">
+    <thead>
+      <tr><th>Time</th><th>Event</th><th>Image</th></tr>
+    </thead>
+    <tbody id="alertsTable"></tbody>
+  </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
